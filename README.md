@@ -140,7 +140,7 @@ protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_
 ```
 This creates a name_pb2.py file from every name.proto file in the \object_detection\protos folder.
 
-**(Note: TensorFlow occassionally adds new .proto files to the \protos folder. If you get an error saying ImportError: cannot import name 'something_something_pb2' , you may need to update the protoc command to include the new .proto files.)**
+**(Note: TensorFlow occassionally adds new .proto files to the \protos folder. If you get an error saying ImportError: cannot import name 'something_something_pb2' , you may need to update the protoc command to include the new .proto files.Also if you get error there is no such directory, simply find that file name in above command and remove that specific command )**
 
 Finally, run the following commands from the C:\tensorflow1\models\research directory:
 ```
